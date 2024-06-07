@@ -2,11 +2,11 @@ import React from 'react'
 import banner from '../../public/banner.png'
 function Banner() {
   return (<>
-    <div className='max-w-screen-2x1 container mx-auto md:px px-4 flex flex-col md:flex-row'>
+    <div className=' max-w-screen-2xl container mx-auto md:px-20 px-4 flex flex-col md:flex-row '>
       <div className='w-full md:w-1/2 mt-12 md:mt-32'>
         <div className='space-y-12'>
         <h1 className='text-4xl font-bold'>End Hunger! Reduce Waste! Empower Communities!</h1>
-        <p className='text-xl '>FoodSecure connects surplus food from suppliers directly to those in need, ensuring that no food goes to waste. By joining us, you can help combat hunger, support sustainable practices, and strengthen community bonds. Together, we can create a healthier, more resilient world</p>
+        <p className='text-xl '>A paragraph is a unit of writing that deals with a particular topic or idea12345. A paragraph usually consists of at least three to five sentences that support the main idea of the paragraph45. The first sentence of a paragraph is often the topic sentence that introduces the central theme5. Paragraphs are a conventional way of organizing prose and helping writers and readers understand the textFoodSecure connects surplus food from suppliers directly to those in need, ensuring that no food goes to waste. By joining us, you can help combat hunger, support sustainable practices, and strengthen community bonds. Together, we can create a healthier, more resilient world</p>
 
         
         <label className="input input-bordered flex items-center gap-2">
