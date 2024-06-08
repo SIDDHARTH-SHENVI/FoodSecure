@@ -1,0 +1,53 @@
+[
+    {
+      "id": 1,
+      "name": "Vegetable Stir-Fry",
+      "quantity": "10 servings",
+      "hotelName": "Green Leaf Restaurant",
+      "hotelAddress": "123 Main Street, Springfield",
+      "description": "A healthy mix of vegetables stir-fried with soy sauce and ginger.",
+      "contact": "555-1234",
+      "expiryDate": "2024-06-15"
+    },
+    {
+      "id": 2,
+      "name": "Black Bean Tacos",
+      "quantity": "15 servings",
+      "hotelName": "Taco Fiesta",
+      "hotelAddress": "456 Elm Street, Springfield",
+      "description": "Delicious tacos filled with black beans, lettuce, tomato, and avocado.",
+      "contact": "555-5678",
+      "expiryDate": "2024-06-16"
+    },
+    {
+      "id": 3,
+      "name": "Lentil Soup",
+      "quantity": "20 servings",
+      "hotelName": "Soup Haven",
+      "hotelAddress": "789 Oak Street, Springfield",
+      "description": "A hearty lentil soup with carrots, celery, and spices.",
+      "contact": "555-9012",
+      "expiryDate": "2024-06-17"
+    },
+    {
+      "id": 4,
+      "name": "Oatmeal with Fruit",
+      "quantity": "25 servings",
+      "hotelName": "Breakfast Delight",
+      "hotelAddress": "321 Pine Street, Springfield",
+      "description": "Nutritious oatmeal topped with fresh fruit and honey.",
+      "contact": "555-3456",
+      "expiryDate": "2024-06-18"
+    },
+    {
+      "id": 5,
+      "name": "Chickpea Salad",
+      "quantity": "30 servings",
+      "hotelName": "Healthy Eats Cafe",
+      "hotelAddress": "654 Maple Street, Springfield",
+      "description": "A refreshing salad with chickpeas, cucumber, tomato, and parsley.",
+      "contact": "555-7890",
+      "expiryDate": "2024-06-19"
+    }
+  ]
+  

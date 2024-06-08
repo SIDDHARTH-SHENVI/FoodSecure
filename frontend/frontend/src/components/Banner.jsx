@@ -24,21 +24,21 @@ function Banner() {
     </div>
     
     <div className='space-y-6 p-20'>
-    <h2  className='text-xl'>About Us</h2>
+    <h2  className='text-3xl'>About Us</h2>
     <div>
-        <h3 className='text-xl'>Mission</h3>
+        <h3 className='text-2xl'>Mission</h3>
         <p>
             Our mission at FoodSecure is to bridge the gap between food surplus and food scarcity. We aim to reduce food waste and enhance food security by efficiently redistributing surplus food from suppliers such as farms, restaurants, and grocery stores to those in need, including food banks, shelters, and individuals. We believe that by leveraging technology and community collaboration, we can create a sustainable food system that ensures everyone has access to nutritious food.
         </p>
-        <h3 className='text-xl'>Vision</h3>
+        <h3 className='text-2xl'>Vision</h3>
         <p>
             We envision a world where no one goes hungry and where food resources are utilized efficiently and sustainably. Our goal is to foster a community where surplus food is not wasted but shared, supporting both the environment and those in need. Through education and innovation, we strive to promote sustainable food practices and create lasting solutions to food insecurity.
         </p>
     </div>
     
     <div className='space-y-6'>
-      <h2 className='text-2xl'>Resource Section</h2>
-    <h3  className='text-xl'>How to Reduce Food Waste in Your Home</h3>
+      <h2 className='text-3xl'>Resource Section</h2>
+    <h3  className='text-2xl'>How to Reduce Food Waste in Your Home</h3>
     <p>Food waste is a significant issue that affects both the environment and our wallets. By adopting a few simple habits and strategies, you can reduce food waste in your home and contribute to a more sustainable world. Here are some practical tips to help you get started:</p>
     
     <h3 className='text-xl'>1. Plan Your Meals</h3>
