@@ -17,9 +17,9 @@ function Navbarr() {
   },{})
   const navItems=(<>
   <li><a href='/'>Home</a></li>
-      <li><a href='/donors'>Donors</a></li>
-      <li><a>Hotels</a></li>
-      <li><a>Vounteer</a></li></>)
+      <li><a href='/donors'>Browse</a></li>
+      <li><a href='/hotels'>Donations</a></li>
+      <li><a href='/vol'>Vounteer</a></li></>)
   return (<>
     <div className={`max-w-screen-2xl container mx-auto md:px px-4 fixed top-0 left-0 right-0 ${
       sticky?"sticky-navbar shadow-md bg-base-200 duration-300 transition-all ease-in-out"
