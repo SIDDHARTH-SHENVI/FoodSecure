@@ -16,8 +16,8 @@ function Navbarr() {
     };
   },{})
   const navItems=(<>
-  <li><a>Home</a></li>
-      <li><a>Donors</a></li>
+  <li><a href='/'>Home</a></li>
+      <li><a href='/donors'>Donors</a></li>
       <li><a>Hotels</a></li>
       <li><a>Vounteer</a></li></>)
   return (<>

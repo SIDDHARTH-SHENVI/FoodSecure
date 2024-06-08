@@ -1,14 +1,20 @@
 import React from 'react';
-import Navbarr from './components/Navbarr';
-import Banner from './components/Banner';
-import Footer from './components/Footer';
+import Home from './home/Home';
+
+import { Route, Routes } from "react-router-dom"
+import Donor from './donors/Donor';
+
 
 
 function App() {
   return (<>
-   <Navbarr/>
-   <Banner/>
-   <Footer/>
+  {/* <Home/>
+  <Donors/> */}
+  <Routes>
+    <Route path="/" element={<Home/>}/>
+    <Route path='/donors' element={<Donor/>}/>
+
+  </Routes>
 </>)
 }
 
