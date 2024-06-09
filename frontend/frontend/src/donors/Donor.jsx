@@ -3,6 +3,10 @@ import Navbarr from '../components/Navbarr'
 
 import Footer from '../components/Footer'
 import Freefood from '../components/Freefood'
+import FeaturedHotel from '../components/featured'
+
+
+
 
 function Donor() {
   return (
@@ -10,6 +14,7 @@ function Donor() {
       <Navbarr/>
       <div className='min-h-screen'>
       <Freefood/>
+      <FeaturedHotel/>
       </div>
       <Footer/>
     </div>

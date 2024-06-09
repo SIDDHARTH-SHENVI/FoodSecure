@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
 import foodItems from "../../public/list.json"
-function Freefood() {
+
     const settings = {
         dots: true,
         infinite: true,
@@ -30,6 +30,11 @@ function Freefood() {
           }
         ]
       };
+      function Freefood() {
+        const handleSubmit = (item) => {
+          alert(`You have submitted a request for ${item.name}`);
+          
+        };
   return (<>
     <div className=' max-w-screen-2xl container mx-auto md:px-20 px-4'>
         <div className='mt-20 items-center justify-center text-center'>
@@ -48,6 +53,12 @@ function Freefood() {
         <p className="text-gray-700 mb-2"><strong>Description:</strong> {item.description}</p>
         <p className="text-gray-700 mb-2"><strong>Contact:</strong> {item.contact}</p>
         <p className="text-gray-700 mb-2"><strong>Expiry Date:</strong> {item.expiryDate}</p>
+        <button
+              onClick={() => handleSubmit(item)}
+              className="mt-4 w-full bg-green-500 text-white p-2 rounded"
+            >
+              Submit Request
+            </button>
       </div>
          ))}
       </Slider>
