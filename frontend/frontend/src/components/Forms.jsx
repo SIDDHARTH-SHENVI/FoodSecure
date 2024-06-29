@@ -7,6 +7,7 @@ const Forms = () => {
     quantity: '',
     hotelName: '',
     hotelAddress: '',
+    description: '', // Add description to the initial state
     contact: '',
     expiryDate: ''
   });
@@ -27,6 +28,7 @@ const Forms = () => {
         quantity: '',
         hotelName: '',
         hotelAddress: '',
+        description: '', // Reset description field
         contact: '',
         expiryDate: ''
       });
@@ -85,6 +87,16 @@ const Forms = () => {
               onChange={handleChange}
               className="grow" 
               placeholder="Enter address" 
+            />
+          </label>
+          <label className="input input-bordered flex items-center gap-2 mb-2">
+            Description
+            <input
+              name="description"
+              value={formData.description}
+              onChange={handleChange}
+              className="grow" 
+              placeholder="Enter description" 
             />
           </label>
           <label className="input input-bordered flex items-center gap-2 mb-2">

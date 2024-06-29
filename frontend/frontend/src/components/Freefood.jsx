@@ -46,9 +46,15 @@ import axios from "axios"
           getFood();
 
         },[])
-        const handleSubmit = (item) => {
-          alert(`You have submitted a request for ${item.name}`);
-          
+        const handleSubmit = async (item) => {
+          try {
+            await axios.delete(`http://localhost:4001/food/${item._id}`);
+            setFood(food.filter(f => f._id !== item._id));
+            alert(`You have submitted a request for ${item.name}`);
+          } catch (error) {
+            console.error('Error deleting food donation:', error);
+            alert('Error submitting food donation request.');
+          }
         };
   return (<>
     <div className=' max-w-screen-2xl container mx-auto md:px-20 px-4'>
