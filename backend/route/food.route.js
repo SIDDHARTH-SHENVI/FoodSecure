@@ -1,9 +1,11 @@
 import express from 'express';
-import { createFood, getFood } from '../controller/food.controller.js';
+import { createFood, deleteFood, getFood} from '../controller/food.controller.js';
 
 const router=express.Router();
 router.post('/', createFood);
 
-router.get("/",getFood)
+router.get("/",getFood);
+
+router.delete('/:id', deleteFood);
 
 export default router;

@@ -43,3 +43,15 @@ export const getFood=async(req,res)=>{
 
     }
 };  
+
+export const deleteFood = async (req, res) => {
+    const { id } = req.params;
+
+    try {
+        await Food.findByIdAndDelete(id);
+        res.status(200).json({ message: "Food donation deleted successfully" });
+    } catch (error) {
+        console.error("Error deleting food donation:", error);
+        res.status(500).json({ error: "Failed to delete food donation" });
+    }
+};
