@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import axios from "axios"
 
-import foodItems from "../../public/list.json"
+
 
     const settings = {
         dots: true,
@@ -31,9 +32,29 @@ import foodItems from "../../public/list.json"
         ]
       };
       function Freefood() {
-        const handleSubmit = (item) => {
-          alert(`You have submitted a request for ${item.name}`);
-          
+        const[food,setFood]=useState([])
+        useEffect(() =>{
+          const getFood=async()=>{
+            try {
+              const res=await axios.get("http://localhost:4001/food")
+              console.log(res.data)
+              setFood(res.data)
+            } catch (error) {
+              console.log(error)
+            }
+          }
+          getFood();
+
+        },[])
+        const handleSubmit = async (item) => {
+          try {
+            await axios.delete(`http://localhost:4001/food/${item._id}`);
+            setFood(food.filter(f => f._id !== item._id));
+            alert(`You have submitted a request for ${item.name}`);
+          } catch (error) {
+            console.error('Error deleting food donation:', error);
+            alert('Error submitting food donation request.');
+          }
         };
   return (<>
     <div className=' max-w-screen-2xl container mx-auto md:px-20 px-4'>
@@ -44,7 +65,7 @@ import foodItems from "../../public/list.json"
     </div>
     <div>
     <Slider {...settings}>
-    {foodItems.map(item => ( 
+    {food.map(item => ( 
         <div key={item.id} className="bg-white p-6 rounded-lg shadow-md">
         <h3 className="text-xl font-bold mb-2">{item.name}</h3>
         <p className="text-gray-700 mb-2"><strong>Quantity:</strong> {item.quantity}</p>
