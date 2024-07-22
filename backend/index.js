@@ -12,7 +12,7 @@ const app = express()
 app.use(cors());
 app.use(bodyParser.json());
 app.use(express.json());
-app.use("/user",userRoute);
+
 dotenv.config();
 const PORT=process.env.PORT || 4000;
 const URI=process.env.MongodbURI
@@ -32,7 +32,7 @@ try{
 //defining routes
 app.use("/food",foodRoute)
 app.use('/volunteer', volunteerRoutes);
-
+app.use("/user",userRoute);
 app.listen(PORT, () => {
   console.log(`Server is listening on port ${PORT}`)
 })

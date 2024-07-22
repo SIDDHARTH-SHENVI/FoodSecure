@@ -86,9 +86,10 @@ function Freefood() {
               <p className="text-gray-700 mb-2">
                 <strong>Address:</strong> {item.hotelAddress}
               </p>
-              <p className="text-gray-700 mb-2 line-clamp-3">
+              <p className="text-gray-700 mb-2">
                 <strong>Description:</strong> {item.description}
               </p>
+      
               <p className="text-gray-700 mb-2">
                 <strong>Contact:</strong> {item.contact}
               </p>
