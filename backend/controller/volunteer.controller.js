@@ -1,4 +1,5 @@
 import nodemailer from 'nodemailer';
+import Volunteer from '../model/Volunteer.model.js';
 
 // Handle volunteer submission and send email notification
 export const handleVolunteerSubmission = async (req, res) => {
@@ -29,6 +30,16 @@ export const handleVolunteerSubmission = async (req, res) => {
     // Send mail with defined transport object
     let info = await transporter.sendMail(mailOptions);
     console.log('Message sent: %s', info.messageId);
+    const volunteer = new Volunteer({
+      fullName,
+      email,
+      phone,
+      interests,
+      startDate,
+      endDate,
+    });
+
+    await volunteer.save();
     res.status(200).send('Volunteer submission received successfully.');
   } catch (error) {
     console.error('Error sending email:', error);
